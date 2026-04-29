@@ -5,21 +5,21 @@
 class M3uDl < Formula
   desc "Browse Xtream IPTV catalogs and download into a Plex-compatible library."
   homepage "https://github.com/Thiritin/m3u-downloader"
-  version "0.1.1"
+  version "0.2.0"
   license "see LICENSE"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.1.1/m3u-dl-v0.1.1-darwin-amd64.tar.gz"
-      sha256 "ccb7f0356a0943b828ca9ef5ca412436ed0686edf4e08d5cd16d0c28ac0e4d62"
+      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.2.0/m3u-dl-v0.2.0-darwin-amd64.tar.gz"
+      sha256 "edceef4b8133e9b4a9b1f8d74081fd9527f0a6cbd96b6639960fcdb18a5d1621"
 
       define_method(:install) do
         bin.install "m3u-dl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.1.1/m3u-dl-v0.1.1-darwin-arm64.tar.gz"
-      sha256 "e3d68ceecfb3074b662fddf2fa07e16d1fe1683a74c0adc40282684b1474de93"
+      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.2.0/m3u-dl-v0.2.0-darwin-arm64.tar.gz"
+      sha256 "c21d4d09db2991960840b3fa0503e9ab7ac58c55367f5c2915debfc0d36dcf71"
 
       define_method(:install) do
         bin.install "m3u-dl"
@@ -29,15 +29,15 @@ class M3uDl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.1.1/m3u-dl-v0.1.1-linux-amd64.tar.gz"
-      sha256 "e297a479dc6653cefd043266c5d910614ca98a6f5f29e1875f77e3163e25bdbe"
+      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.2.0/m3u-dl-v0.2.0-linux-amd64.tar.gz"
+      sha256 "ca5d8e25642a40d27ead336e06a247e99e5a43a24de13febc172430638379667"
       define_method(:install) do
         bin.install "m3u-dl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.1.1/m3u-dl-v0.1.1-linux-arm64.tar.gz"
-      sha256 "879cb6073f0b9eac169ab63d88e364e02f4b40e007dd942fd3b8c381de9af7aa"
+      url "https://github.com/Thiritin/m3u-downloader/releases/download/v0.2.0/m3u-dl-v0.2.0-linux-arm64.tar.gz"
+      sha256 "0763fe5e83654c2605c66a4f548c9181770ea5b764c76ba897f5dae044c46d62"
       define_method(:install) do
         bin.install "m3u-dl"
       end
